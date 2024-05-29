@@ -1,0 +1,29 @@
+class Person {
+  constructor(name, age, gender, qualification,country) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.qualification = qualification;
+    this.country = country;
+  }
+
+  displayDetails() {
+    console.log(`Name: ${this.name}`);
+    console.log(`Age: ${this.age}`);
+    console.log(`Gender: ${this.gender}`);
+    console.log(`Qualification: ${this.qualification}`);
+    console.log(`Country: ${this.country}`);
+  }
+}
+
+
+const person1 = new Person('Appu', 22, 'India');
+const person2 = new Person('Vicky', 27, 'India');
+
+
+console.log('Person-1 Details:');
+person1.displayDetails();
+
+
+console.log('\nPerson-2 Details:');
+person2.displayDetails();
